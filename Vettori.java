@@ -10,11 +10,11 @@ public class Vettori{
         */
         Scanner tastiera = new Scanner(System.in);
 
-        System.out.println("Quanti numeri vuoi inserire? ")
+        System.out.println("Quanti numeri vuoi inserire? ");
         int n = Integer.parseInt(tastiera.nextLine());
         int array[] = new int[n];
         for(int i=0; i < n; i++){
-            System.out.println("Inserisci il "+(i+1)+"° numero:")
+            System.out.println("Inserisci il "+(i+1)+"° numero:");
             array[i] = Integer.parseInt(tastiera.nextLine());
         }
 
