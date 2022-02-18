@@ -11,7 +11,9 @@ public class EsOrdinamento {
 
     // metodo swap che dato un array e due posizioni, scambi i valori all'interno
     public static void swap(int[] array, int pos1, int pos2){
-        
+        int temp = array[pos1];
+        array[pos1] = array[pos2];
+        array[pos2] = temp; 
     }
 
     public static void main(String[] args) {
