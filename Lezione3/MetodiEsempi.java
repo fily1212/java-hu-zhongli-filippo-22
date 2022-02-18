@@ -9,16 +9,19 @@ public class MetodiEsempi {
     }
     public static void main(String[] args) { 
 
-        int num = somma(1,2);
-        System.out.println(num);
+     //   int num = somma(1,2);
+     //   System.out.println(num);
 
         int[] a = {1,2,3,4,5,6,7};
 
-        Util.stampa(a);
+       // Util.stampa(a);
 
         a[1] = 4;
 
-        Util.stampa(a);
+      //  Util.stampa(a);
+
+        int[] b = Util.creaArray();
+        Util.stampa(b);
     } 
  
 
