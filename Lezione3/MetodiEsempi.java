@@ -11,6 +11,14 @@ public class MetodiEsempi {
 
         int num = somma(1,2);
         System.out.println(num);
+
+        int[] a = {1,2,3,4,5,6,7};
+
+        Util.stampa(a);
+
+        a[1] = 4;
+
+        Util.stampa(a);
     } 
  
 
