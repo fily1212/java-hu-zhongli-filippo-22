@@ -1,5 +1,4 @@
 public class Util {
-    
     // metodo che stampa un array di interi
     public static void stampa(int [] pippo){
         System.out.print("["); 
@@ -9,8 +8,14 @@ public class Util {
                 System.out.print(", ");
             } 
         }
-        System.out.print("]");
+        System.out.println("]");
     }  
+    // che restituisce un array di interi chiesti tramite input
+    public static int[] creaArray(){
+        // Chiedere all'utente quanti numeri vuole inserire
+        // fare l'inserimento
+        // ritornare l'array inizializzato
+    }
 }
 
 
