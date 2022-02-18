@@ -27,7 +27,7 @@ public class Util {
             x[i] = tastiera.nextInt();
         }
         return x;
-        // ritornare l'array inizializzato
+        // ritornare l'array inizializzato  
     }
 }
 
