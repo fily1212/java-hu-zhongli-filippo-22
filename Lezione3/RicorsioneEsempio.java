@@ -1,3 +1,6 @@
+// Esercizio: cosa fa metodoRicorsivo? Disegnare lo stack.
+
+
 public class RicorsioneEsempio {
     public static void metodoRicorsivo(int n){
         System.out.println(n);
@@ -5,6 +8,6 @@ public class RicorsioneEsempio {
             metodoRicorsivo(n-1);
     }
     public static void main(String[] args) {
-        metodoRicorsivo(10);
+        metodoRicorsivo(3);
     }
 }
