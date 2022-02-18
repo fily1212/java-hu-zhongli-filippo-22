@@ -11,5 +11,6 @@ public class EsempioStack {
         a = b - 1 ;
         a = doppio(a);
         int c = triplo(b);
+        int[] d = new int[3];
     }
 }
