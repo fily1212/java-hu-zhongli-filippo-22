@@ -1,6 +1,7 @@
 package com.engim;
 /*
-* fare due metodi: riempi(int q) e svuota(int q) che riempiono e svuotano la bottiglia della quantità q
+* fare due metodi: riempi(int q) e svuota(int q) che
+* riempiono e svuotano la bottiglia della quantità q
 * BottigliaConTappo
 * boolean aperta
 * apri() e chiudi()
