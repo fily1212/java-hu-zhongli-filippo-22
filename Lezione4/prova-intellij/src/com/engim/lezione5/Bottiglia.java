@@ -13,10 +13,11 @@ public class Bottiglia {
     private int quantita;
 
     public Bottiglia(int capacita) {
-        if(capacita < 0)
+        this.capacita = Math.max(0, capacita);
+/*        if(capacita < 0)
             this.capacita = 0;
         else
-            this.capacita = capacita;
+            this.capacita = capacita;*/
         this.quantita = 0;
 
     }
@@ -38,9 +39,9 @@ public class Bottiglia {
         return quantita;
     }
 
-    public void setQuantita(int quantita) {
+    /*public void setQuantita(int quantita) {
         this.quantita = quantita;
-    }
+    }*/
 
     @Override
     public String toString() {

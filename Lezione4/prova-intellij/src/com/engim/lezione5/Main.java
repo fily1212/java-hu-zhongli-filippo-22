@@ -6,7 +6,10 @@ public class Main {
 	// write your code here
         Bottiglia b1 = new Bottiglia(1500);
         System.out.println(b1);
-        b1.setQuantita(1000);
+        b1.riempi(500);
         System.out.println(b1);
+        b1.svuota(200);
+        System.out.println(b1);
+
     }
 }
