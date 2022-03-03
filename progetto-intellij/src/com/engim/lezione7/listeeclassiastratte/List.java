@@ -1,4 +1,4 @@
-package com.engim.lezione7;
+package com.engim.lezione7.listeeclassiastratte;
 
 public abstract class List {
 

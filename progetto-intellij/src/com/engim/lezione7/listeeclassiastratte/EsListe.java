@@ -1,4 +1,4 @@
-package com.engim.lezione7;
+package com.engim.lezione7.listeeclassiastratte;
 
 public class EsListe {
     public static void main(String[] args) {
