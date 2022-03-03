@@ -28,4 +28,10 @@ public class Node extends List {
         else
             return this.next.get(index-1);
     }
+
+    @Override
+    public String toString() {
+        return "" + value +
+                ' '+ this.next.toString();
+    }
 }

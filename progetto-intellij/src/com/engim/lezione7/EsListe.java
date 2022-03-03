@@ -5,6 +5,9 @@ public class EsListe {
         Nil nil = new Nil();
         List lista = new Node(new Node(new Node(nil,1),2),3);
         System.out.println(lista.get(2));
+        System.out.println(lista);
+        //lista.add(0,4);
+
 
     }
 }

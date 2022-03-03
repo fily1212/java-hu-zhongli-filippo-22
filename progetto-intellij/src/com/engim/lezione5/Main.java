@@ -14,5 +14,7 @@ public class Main {
        // b2.apri();
         b2.svuota(500);
 
+
+
     }
 }

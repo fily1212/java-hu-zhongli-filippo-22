@@ -6,4 +6,9 @@ public class Nil extends List{
     public int get(int index) {
         return 0;
     }
+
+    @Override
+    public String toString() {
+        return "";
+    }
 }
