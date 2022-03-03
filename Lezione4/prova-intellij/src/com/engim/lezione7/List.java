@@ -1,6 +1,6 @@
 package com.engim.lezione7;
 
-public class List {
+public abstract class List {
 
-
+    public abstract int get(int index);
 }
