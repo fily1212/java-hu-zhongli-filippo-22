@@ -8,6 +8,5 @@ public class EsListe {
         System.out.println(lista);
         //lista.add(0,4);
 
-
     }
 }

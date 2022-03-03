@@ -34,4 +34,17 @@ public class Node extends List {
         return "" + value +
                 ' '+ this.next.toString();
     }
+
+    @Override
+    public List add(int index, int value) {
+        if (index == 0){
+            this.next = new Node(this.next, this.value);
+            this.value = value;
+        }
+        else {
+            this.next = this.next.add(index-1,value);
+        }
+        return this;
+    }
+
 }
