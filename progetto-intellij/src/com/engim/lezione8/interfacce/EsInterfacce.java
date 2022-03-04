@@ -1,4 +1,4 @@
-package com.engim.lezione7.interfacce;
+package com.engim.lezione8.interfacce;
 
 public class EsInterfacce {
     public static void main(String[] args) {
