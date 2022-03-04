@@ -51,4 +51,16 @@ public class Node extends List {
     public int length() {
         return 1 + this.next.length();
     }
+
+    @Override
+    public List removeIndex(int i) {
+
+        if (i == 0){
+            return this.next;
+        }else{
+            this.next = this.next.removeIndex(i-1);
+            return this;
+        }
+
+    }
 }

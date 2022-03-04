@@ -28,4 +28,11 @@ public class Nil extends List {
     public int length() {
         return 0;
     }
+
+    @Override
+    public List removeIndex(int i) {
+        System.out.println("Index out of bound exception");
+        System.exit(1);
+        return this;
+    }
 }
