@@ -16,7 +16,7 @@ public class Main extends JFrame {
 
         f = new ArrayList<>();
         f.add(new Rettangolo(500,300));
-        f.add(new Quadrato(400));
+        //f.add(new Quadrato(400));
     }
 
 
