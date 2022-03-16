@@ -3,25 +3,26 @@ package com.engim.lezione10.eccezioni;
 public class EsempioThrow {
 
     public static void m1() throws Exception {
-        throw new Exception("Errore");
+        throw new ExampleException();
     }
 
     public static void main(String[] args) {
         int c = 0;
-        if(c == 0)
-            throw new ArithmeticException("Errore");
-
+        if (c ==0)
+            throw new EsempioNonControllatoException();
         try{
-            // SINTASSI
+            // SINTASSI del comando per lanciare un'eccezione
             throw new Exception("Errore");
         }catch(Exception e){
 
         }
 
+
         try {
             m1();
+            System.out.println("Stampa se non fallisci");
         }catch (Exception e){
-
+            System.out.println(e.getMessage());
         }
     }
 
