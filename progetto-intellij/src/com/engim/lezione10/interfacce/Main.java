@@ -6,8 +6,8 @@ import java.util.ArrayList;
 
 public class Main extends JFrame {
     ArrayList<Forma> f;
-    private final int WIDTH = 1500;
-    private final int HEIGHT = 1000;
+    private final int WIDTH = 1000;
+    private final int HEIGHT = 500;
     public Main() {
         setTitle("Forme");
         setSize(WIDTH,HEIGHT);
