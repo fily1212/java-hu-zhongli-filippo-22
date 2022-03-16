@@ -17,6 +17,9 @@ public class Rettangolo extends Poligono {
     public void disegna(Graphics g, int x, int y) {
         // completa qui
         g.drawLine(x-(larghezza/2),y-(altezza/2),x+(larghezza/2),y-(altezza/2));
+        g.drawLine(x-(larghezza/2),y-(altezza/2),x-(larghezza/2),y+(altezza/2));
+        g.drawLine(x+(larghezza/2),y-(altezza/2),x+(larghezza/2),y+(altezza/2));
+        g.drawLine(x-(larghezza/2),y+(altezza/2),x+(larghezza/2),y+(altezza/2));
 
     }
 }

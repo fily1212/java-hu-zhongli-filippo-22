@@ -6,8 +6,8 @@ import java.util.ArrayList;
 
 public class Main extends JFrame {
     ArrayList<Forma> f;
-    private final int WIDTH = 1000;
-    private final int HEIGHT = 500;
+    private final int WIDTH = 1200;
+    private final int HEIGHT = 900;
     public Main() {
         setTitle("Forme");
         setSize(WIDTH,HEIGHT);
@@ -15,7 +15,7 @@ public class Main extends JFrame {
         setDefaultCloseOperation(EXIT_ON_CLOSE);
 
         f = new ArrayList<>();
-        f.add(new Rettangolo(1000,800));
+        f.add(new Rettangolo(500,300));
         f.add(new Quadrato(400));
     }
 
