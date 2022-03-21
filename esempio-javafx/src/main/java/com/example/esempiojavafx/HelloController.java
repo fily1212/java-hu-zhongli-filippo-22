@@ -12,12 +12,13 @@ public class HelloController {
     @FXML
     private Button addPersonaButton;
 
-
+    @FXML
+    private Label personeLabel;
 
     @FXML
     protected void onAddPersonaButtonClick() {
         Registro.getInstance().addPersona("Pippo");
-
+        personeLabel.setText();
 //        welcomeText.setText("Welcome to JavaFX Application!");
     }
 
