@@ -1,6 +1,5 @@
 package com.example.esempiojavafx;
 
-import com.example.esempiojavafx.model.Registro;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;

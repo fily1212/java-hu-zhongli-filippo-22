@@ -1,7 +1,5 @@
 package com.example.esempiojavafx.model;
 
-import javafx.collections.ObservableList;
-
 import java.util.ArrayList;
 import java.util.List;
 
