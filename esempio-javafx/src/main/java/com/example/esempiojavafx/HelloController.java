@@ -18,7 +18,7 @@ public class HelloController {
     @FXML
     protected void onAddPersonaButtonClick() {
         Registro.getInstance().addPersona("Pippo");
-        personeLabel.setText();
+        personeLabel.setText(Registro.getInstance().getNomiPersone());
 //        welcomeText.setText("Welcome to JavaFX Application!");
     }
 
