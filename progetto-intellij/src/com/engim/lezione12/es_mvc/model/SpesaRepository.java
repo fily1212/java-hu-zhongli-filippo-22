@@ -10,5 +10,4 @@ public interface SpesaRepository {
     boolean addLista(String nome);
     boolean addElemToLista(String elem);
     boolean removeElemToLista(String elem);
-
 }
