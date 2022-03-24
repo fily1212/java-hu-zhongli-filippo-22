@@ -26,26 +26,39 @@ public class ArrayListSpesaRepository implements SpesaRepository{
 
     @Override
     public List<String> findListaByNome(String nome) {
-        return null;
+        return liste.get(nome).getProdotti();
     }
 
     @Override
     public boolean removeListaByNome(String nome) {
-        return false;
+        if(liste.containsKey(nome)){
+            liste.remove(nome);
+            return true;
+        }else
+            return false;
     }
 
     @Override
     public boolean addLista(String nome) {
+        if(liste.containsKey(nome))
+            return false;
+        else{
+            liste.put(nome,new Lista());
+            return true;
+        }
+    }
+
+    @Override
+    public boolean addElemToLista(String lista, String elem) {
+        if(liste.containsKey(lista))
+            return liste.get(lista).addProdotto(elem);
         return false;
     }
 
     @Override
-    public boolean addElemToLista(String elem) {
-        return false;
-    }
-
-    @Override
-    public boolean removeElemToLista(String elem) {
+    public boolean removeElemToLista(String lista, String elem) {
+        if(liste.containsKey(lista))
+            return liste.get(lista).removeProdotto(elem);
         return false;
     }
 }
