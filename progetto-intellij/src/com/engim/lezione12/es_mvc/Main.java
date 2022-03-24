@@ -1,5 +1,7 @@
 package com.engim.lezione12.es_mvc;
 
+import com.engim.lezione12.es_mvc.controller.ListaSpesaController;
+
 import java.util.Scanner;
 
 /*
@@ -20,7 +22,10 @@ Per il mantenimento dei dati creare un'interfaccia chiamata SpesaRepository che 
 
 */
 public class Main {
+    private static ListaSpesaController controller;
+
     public static void main(String[] args) {
+        controller = new ListaSpesaController();
         System.out.println("Benvenuto nel programma Lista della spesa");
         boolean finito = false;
         Scanner tastiera = new Scanner(System.in);
@@ -38,6 +43,7 @@ public class Main {
                     nomiListe();
                     break;
                 case "2":
+                    aggiungiLista(tastiera);
                     break;
                 case "3":
                     break;
@@ -53,7 +59,19 @@ public class Main {
         }
     }
 
-    private static void nomiListe() {
+    private static void aggiungiLista(Scanner tastiera) {
+        System.out.println("Inserisci il nome della lista");
+        String risposta = tastiera.nextLine();
+        if (controller.aggiungiLista(risposta))
+            System.out.println("OK");
+        else
+            System.out.println("Lista già esistente");
 
+    }
+
+    private static void nomiListe() {
+        for (String nome : controller.getNomiListe()) {
+            System.out.println(nome);
+        }
     }
 }
