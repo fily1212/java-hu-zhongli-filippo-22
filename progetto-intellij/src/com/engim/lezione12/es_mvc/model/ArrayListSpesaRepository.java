@@ -1,6 +1,7 @@
 package com.engim.lezione12.es_mvc.model;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
@@ -11,6 +12,7 @@ public class ArrayListSpesaRepository implements SpesaRepository{
 
     private ArrayListSpesaRepository(){
         instance = this;
+        liste = new HashMap<>();
     }
 
     public static SpesaRepository getInstance(){

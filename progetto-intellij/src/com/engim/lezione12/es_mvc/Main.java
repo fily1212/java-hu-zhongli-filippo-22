@@ -2,6 +2,7 @@ package com.engim.lezione12.es_mvc;
 
 import com.engim.lezione12.es_mvc.controller.ListaSpesaController;
 
+import java.util.List;
 import java.util.Scanner;
 
 /*
@@ -46,17 +47,61 @@ public class Main {
                     aggiungiLista(tastiera);
                     break;
                 case "3":
+                    cancellaLista(tastiera);
                     break;
                 case "4":
+                    leggiLista(tastiera);
                     break;
                 case "5":
+                    aggiungiElemLista(tastiera);
                     break;
                 case "6":
+                    cancellaElemLista(tastiera);
                     break;
                 default:
                     System.out.println("Hai sbagliato ad inserire");
             }
         }
+    }
+
+    private static void cancellaElemLista(Scanner tastiera) {
+        System.out.print("Inserisci il nome della lista: ");
+        String lista = tastiera.nextLine();
+        System.out.print("Inserisci il nome dell'elemento: ");
+        String elemento = tastiera.nextLine();
+        if(controller.removeElemToLista(lista,elemento))
+            System.out.println("OK");
+        else
+            System.out.println("Errore");
+    }
+
+    private static void aggiungiElemLista(Scanner tastiera) {
+        System.out.print("Inserisci il nome della lista: ");
+        String lista = tastiera.nextLine();
+        System.out.print("Inserisci il nome dell'elemento: ");
+        String elemento = tastiera.nextLine();
+        if(controller.addElemInLista(lista,elemento))
+            System.out.println("OK");
+        else
+            System.out.println("Errore");
+    }
+
+    private static void leggiLista(Scanner tastiera) {
+        System.out.println("Inserisci il nome della lista da leggere");
+        String risposta = tastiera.nextLine();
+        List<String> elementi = controller.getElemByNome(risposta);
+        for (String elem: elementi) {
+            System.out.println(elem);
+        }
+    }
+
+    private static void cancellaLista(Scanner tastiera) {
+        System.out.println("Inserisci il nome della lista da cancellare");
+        String risposta = tastiera.nextLine();
+        if (controller.rimuoviLista(risposta))
+            System.out.println("OK");
+        else
+            System.out.println("Lista non esistente");
     }
 
     private static void aggiungiLista(Scanner tastiera) {
@@ -70,8 +115,10 @@ public class Main {
     }
 
     private static void nomiListe() {
+        System.out.println("Liste: ");
         for (String nome : controller.getNomiListe()) {
             System.out.println(nome);
         }
+        System.out.println("\n\n");
     }
 }
