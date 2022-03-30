@@ -2,7 +2,7 @@ package com.engim.lezione12.db;
 
 import java.sql.*;
 
-public class JDBCExamplePrepareStatement {
+public class JDBCExampleInsert {
 
 
 
@@ -20,14 +20,10 @@ public class JDBCExamplePrepareStatement {
         // Open a connection
         try{
             Connection conn = DriverManager.getConnection(DB_URL, USER, PASS);
-            PreparedStatement stmt = conn.prepareStatement("select nome from liste where nome = ?");
-            stmt.setString(1,"Macellaio");
-            ResultSet rs = stmt.executeQuery();
+            PreparedStatement stmt = conn.prepareStatement("INSERT INTO liste VALUES (?)");
+            stmt.setString(1,"Fruttivendolo");
+            stmt.executeUpdate();
 
-            while(rs.next()){
-                //Display values
-               System.out.println(rs.getString("nome"));
-            }
         } catch (SQLException e) {
             e.printStackTrace();
         }

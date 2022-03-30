@@ -8,8 +8,6 @@ import java.sql.Statement;
 
 public class JDBCExample {
 
-
-
 //   SQLInjection
 //    str ="' or 1 = 1 or '"
 //    "SELECT nome from liste where user = '" + str + "' and pwd='"+pwd+"';"
