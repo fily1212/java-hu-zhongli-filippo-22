@@ -13,7 +13,7 @@ public class SalutoController {
     private final AtomicLong counter = new AtomicLong();
 
     @GetMapping("/greeting")
-    public Saluto greeting(@RequestParam(value = "name", defaultValue = "World") String name) {
+    public Saluto greeting(@RequestParam(value = "nome", defaultValue = "World") String name) {
         return new Saluto(counter.incrementAndGet(), String.format(template, name));
     }
 }
