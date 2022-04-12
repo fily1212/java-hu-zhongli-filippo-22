@@ -16,6 +16,9 @@
 *.iml
 *.ipr
 
+##SECRET##
+*application-secret.yml
+
 ### NetBeans ###
 /nbproject/private/
 /build/
